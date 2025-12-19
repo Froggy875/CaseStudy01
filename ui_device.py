@@ -1,5 +1,6 @@
 # Eine Auswahlbox mit Datenbankabfrage, das Ergebnis wird in current_device gespeichert
 devices_in_db = find_devices()
+
 if devices_in_db:
     current_device_name = st.selectbox(
         'Gerät auswählen',
