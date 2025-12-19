@@ -7,5 +7,6 @@ st.text_input("Passwort")
 if st.button("Login"):
     st.switch_page("pages/user_page.py")
 
-if st.button("Ich bin Admin"):
+if st.button("Als Admin anmelden"):
     st.switch_page("pages/admin_page.py")
+
