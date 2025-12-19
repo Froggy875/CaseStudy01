@@ -1,4 +1,7 @@
 # Eine Auswahlbox mit Datenbankabfrage, das Ergebnis wird in current_device gespeichert
+import streamlit as st
+import devices
+
 devices_in_db = find_devices()
 
 if devices_in_db:

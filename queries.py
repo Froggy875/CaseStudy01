@@ -1,5 +1,6 @@
 import os
 from tinydb import TinyDB, Query
+
 def find_devices() -> list:
     """Find all devices in the database."""
     # Define the database connector
