@@ -20,7 +20,6 @@ def edit_device_dialog(devices_in_db):
             loaded_device = Device.find_by_attribute("device_name", current_device_name)
             
             if loaded_device:                
-                # Das Formular kombiniert dein Layout mit deiner Logik
                 with st.form("Device"):
                     st.write(f"Bearbeite: **{loaded_device.device_name}**")
 
@@ -63,7 +62,6 @@ def add_device_dialog(devices_in_db):
             
             else:
                 # 3. Neues Gerät-Objekt erstellen
-                # Ich nehme an, die Device-Klasse kann so initialisiert werden:
                 try:
                     new_device = Device(device_name=new_name, managed_by_user_id=new_manager_email)
                     
@@ -86,7 +84,6 @@ def edit_user_dialog(users_in_db): # 1. Parameter passend benannt
             options=users_in_db, key="sbUser")
 
         if current_id in users_in_db:
-            # 2. WICHTIG: User statt Device verwenden!
             loaded_user = User.find_by_attribute("id", current_id)
             
             if loaded_user:                
